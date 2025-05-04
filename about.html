@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #8d6e63, #3e2723);
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .navbar, footer {
+      background: linear-gradient(135deg, #6d4c41, #3e2723);
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+    }
+
+    .navbar-brand img {
+      margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffcc80 !important;
+      transform: scale(1.1);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-content {
+      padding: 30px;
+      animation: smoothFadeIn 0.8s ease;
+    }
+
+    .about-content h2,
+    .about-content h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffcc80;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .about-content p,
+    .about-content ul {
+      font-size: 1.1rem;
+    }
+
+    .about-content ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .about-content ul li {
+      padding: 5px 0;
+    }
+
+    .about-content ul li i {
+      color: #ffcc80;
+      margin-right: 10px;
+    }
+
+    @keyframes smoothFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .navbar-brand span {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">
+        <img src="./icons/man.png" alt="Logo" width="50" height="50" />
+        <span>Portfolio</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><i class="bi bi-house-door-fill"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html"><i class="bi bi-code-slash"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html"><i class="bi bi-person-circle"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="bi bi-envelope-fill"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container my-5 about-content">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>About Me</h2>
+        <p class="lead">
+          Hello! My name is Romar Bernabe, and I’m currently 18 years old. I live in Panghulo, a barangay located in the peaceful town of Obando in the province of Bulacan, Philippines. 
+          I’m a friendly and outgoing person who enjoys spending time with others and making meaningful connections. One of my favorite hobbies is playing volleyball—I love the energy of the game, 
+          the teamwork it requires, and the excitement of competition. Outside of sports, I also enjoy having long conversations with my friends. Talking with them helps me relax, share stories, 
+          and build strong bonds. Whether it’s on the court or just hanging out, I always value the moments I get to spend with the people around me.
+        </p>
+
+        <h3>Experience</h3>
+        <p class="lead">
+          I have work experience at a mineral water station and at BigBrew Milktea shop.
+        </p>
+
+        <h3>Skills</h3>
+        <ul>
+          <li><i class="bi bi-check-circle-fill"></i> Responsible and punctual</li>
+          <li><i class="bi bi-check-circle-fill"></i> Creative Thinking</li>
+          <li><i class="bi bi-check-circle-fill"></i> Fast Learner</li>
+          <li><i class="bi bi-check-circle-fill"></i> Friendly</li>
+        </ul>
+
+        <h3>Goals</h3>
+        <p class="lead">
+          My dream is to have a stable and fulfilling career where I can grow personally and professionally. 
+        </p>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

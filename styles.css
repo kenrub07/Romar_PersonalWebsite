@@ -1,0 +1,80 @@
+/* GENERAL STYLES */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #4e342e, #795548); /* Brown gradient */
+  color: #fff;
+}
+
+.login-section {
+  height: 100vh;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* LOGO */
+.logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.btn-purple {
+  background: #5d4037; /* Dark brown */
+  border: none;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.btn-purple:hover {
+  background: #3e2723; /* Darker brown on hover */
+}
+
+/* TEXT LINKS */
+a {
+  text-decoration: none;
+}
+
+.text-purple {
+  color: #d7ccc8; /* Light brown/tan */
+}
+
+.text-purple:hover {
+  color: #ffe0b2; /* Soft beige on hover */
+}
+
+/* INPUT FIELDS */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #a1887f;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+.input-group-text {
+  background-color: #6d4c41;
+  border: none;
+  color: #fff;
+}
+
+.alert-danger {
+  background-color: #c62828;
+  border: none;
+}
+
+/* Checkbox and Labels */
+.form-check-label,
+.form-label {
+  color: #fff;
+}
