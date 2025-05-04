@@ -19,7 +19,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  if (username === "romar" && password === "romarhaha") {
+  if (username === "" && password === "") {
       document.getElementById('error-message').classList.add('d-none'); 
       window.location.href = "home.html";
   } else {
